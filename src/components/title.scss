@@ -1,0 +1,46 @@
+
+.title
+{     
+    .star{
+        margin-bottom: 5px;
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    margin-top: 280px;
+    position: absolute; 
+   .oxontext{
+    color: rgb(26, 207, 26);
+    font-size: 12px;
+ 
+   }
+
+   .price
+   {
+    color: white;
+    background-color: rgb(26, 207, 26);
+    padding: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+   }
+   .realprice{
+    color: gray;
+    font-size: 14px;
+   }
+   .unrealprice{
+    color: gray;
+    margin-left: 10px;
+    font-size: 11px;
+    text-decoration: line-through;
+   }
+   .rate{
+    margin-left: 1px;
+    font-size: 14px;
+    color: gray;
+   }
+
+}
