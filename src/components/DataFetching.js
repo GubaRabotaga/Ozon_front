@@ -20,7 +20,7 @@ useEffect(()=>{
 },[])
 
     
-    const newLocal = "220";
+   
     return(
     <div>
   <ul>
@@ -32,7 +32,7 @@ useEffect(()=>{
         
         <li key={post.id}>
 
-
+    
            <img src={post.image} className="hgh"/>
            <img className="heart" width={25} height={25} src="img/heart.svg"/>
                <span className="title">
