@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import axios from 'axios';
-import './title.scss';
+import './styles/title.scss';
+
 
 <style>
 </style>
@@ -26,25 +27,42 @@ useEffect(()=>{
   
     {
         
-        posts.map(post=> <li key={post.id}>
-        <img width={newLocal} height="250" src={post.image}/>
-        <span className="title">
-        <span className="price">
-        {post.price}$
-        </span>
-        <span className="oxontext"> с OZON картой</span>
-        <br/>
-        <span className="realprice"> {post.price+(post.price/5)}</span>
-        <span className="unrealprice"> {post.price+(post.price*3)}</span>
-      
-        <br/>
+        posts.map(post=> 
         
-        {post.title}
-        <br/>
         
-        <img className="star" width={16} height={16} src="img/star.svg"/><span className="rate"> {post.rating.rate}</span>
-        <img className="star" width={16} height={16} src="img/comment.svg"/><span className="rate"> {post.rating.count}</span>
-        </span>
+        <li key={post.id}>
+
+
+           <img src={post.image} className="hgh"/>
+           <img className="heart" width={25} height={25} src="img/heart.svg"/>
+               <span className="title">
+               
+
+
+                      <span className="price">
+                         {post.price}$
+                      </span>
+                              <span className="oxontext"> с OZON картой
+                                 </span>
+                                     <br/>
+                                         <span className="realprice"> 
+                                                  {post.price+(post.price/5)}
+                                         </span>
+                                                   <span className="unrealprice"> 
+                                                         {post.price+(post.price*3)}
+                                                  </span>
+                                                     <br/>
+                                                      {post.title}
+                                                     <br/>
+                                             <img className="star" width={16} height={16} src="img/star.svg"/>
+                                        <span className="rate"> 
+                                            {post.rating.rate}
+                                        </span>
+                                  <img className="star" width={16} height={16} src="img/comment.svg"/>
+                           <span className="rate"> 
+                                {post.rating.count}
+                           </span>
+                </span>
         
         
         </li>)

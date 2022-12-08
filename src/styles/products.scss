@@ -1,0 +1,62 @@
+.products{
+  
+    h5{
+     color: blue;
+     
+    }
+     font-weight: 500;
+   img{
+     
+     pointer-events: none;
+     position: absolute;
+     margin-top: -4px;
+     margin-left: -4px;
+   }
+   
+   form{
+     
+    
+     padding-left: 32px;
+     margin-top: -24px;
+     padding-bottom: 10px;
+   
+   }
+     
+   .squareradio{
+     input[type=radio] {
+       padding: 0.5em;
+       appearance: none;
+       outline: 0.13em solid gray ;
+       outline-offset: 0.0.5em;
+       margin-top: 14px;
+       border-radius: 3px;
+     }
+     
+     input[type=radio]:checked {
+       outline: 0.15em solid blue;
+       display: inline-block;
+       border-radius: 3px;
+       background-color: blue;
+     }
+   }
+     span{
+       background-color:white;
+       margin-left: 1vw; 
+       width: 140px;
+       display: flex;
+       text-align: start;
+       border: 5px solid white;
+       border-radius: 5px;
+       &:active{
+         background-color:rgba(0, 174, 255, 0.1);
+         border: 5px solid rgba(0, 174, 255, 0.01) ;
+       }
+       &:hover{
+         color: blue;
+         cursor: pointer;
+       }
+       
+     }
+   
+    
+   }
